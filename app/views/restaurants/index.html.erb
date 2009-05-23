@@ -4,6 +4,7 @@
   <tr>
     <th>Name</th>
     <th>Vegan</th>
+    <th></th>
   </tr>
 
 <% @restaurants.each do |restaurant| %>
@@ -13,6 +14,7 @@
     <td><%= link_to 'Show', restaurant %></td>
     <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
     <td><%= link_to 'Destroy', restaurant, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= button_to 'Visit', restaurant_visits_path(restaurant) %> </td>
   </tr>
 <% end %>
 </table>
