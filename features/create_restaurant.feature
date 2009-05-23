@@ -8,5 +8,5 @@ Scenario: Add vegetarian Restaurant
     And I follow "New Restaurant"
     And I fill in "name" with "New vegetarian restaurant"
     When I press "Create"
-    Then I should see "New Restaurant"
+    Then I should see "New vegetarian restaurant"
     And I should not see "Create"
